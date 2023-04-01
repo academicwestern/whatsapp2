@@ -1,0 +1,87 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fyp-staging-164206-authRole",
+      "UnauthRoleArn": "arn:aws:iam::487812001739:role/amplify-fyp-staging-164206-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::487812001739:role/amplify-fyp-staging-164206-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-fyp-staging-164206-deployment",
+      "UnauthRoleName": "amplify-fyp-staging-164206-unauthRole",
+      "StackName": "amplify-fyp-staging-164206",
+      "StackId": "arn:aws:cloudformation:eu-north-1:487812001739:stack/amplify-fyp-staging-164206/255dbe40-cbf5-11ed-8eec-06a8a5af1e94",
+      "AmplifyAppId": "d3941wrmeyodle"
+    }
+  },
+  "api": {
+    "FYP": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "syow2gln3fgwrislke7xx76vvm",
+        "GraphQLAPIEndpointOutput": "https://o3dg4xxkkzg7znvm4zoqwewlui.appsync-api.eu-north-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-b5lc4qbyqjfk7iz4nsiasfxsua"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-04-01T14:46:20.835Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-fyp-staging-164206-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiFYP"
+      },
+      "lastPushDirHash": "c0agm0VXLK9ujGCQbNocF5yvDSI="
+    }
+  },
+  "auth": {
+    "FYP": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "eu-north-1_HG2SHCysL",
+        "AppClientIDWeb": "6d5pg3g40vg56ca8pniqjd9h0a",
+        "AppClientID": "6gitfd4sur31dfrtg5vs971trn",
+        "IdentityPoolId": "eu-north-1:8c867f9b-50db-46c0-861c-7593adbca211",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:487812001739:userpool/eu-north-1_HG2SHCysL",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "FYP"
+      },
+      "lastPushTimeStamp": "2023-04-01T14:46:20.838Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-fyp-staging-164206-deployment/amplify-cfn-templates/auth/FYP-cloudformation-template.json",
+        "logicalId": "authFYP"
+      }
+    }
+  }
+}

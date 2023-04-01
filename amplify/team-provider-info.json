@@ -1,0 +1,34 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fyp-staging-164206-authRole",
+      "UnauthRoleArn": "arn:aws:iam::487812001739:role/amplify-fyp-staging-164206-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::487812001739:role/amplify-fyp-staging-164206-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-fyp-staging-164206-deployment",
+      "UnauthRoleName": "amplify-fyp-staging-164206-unauthRole",
+      "StackName": "amplify-fyp-staging-164206",
+      "StackId": "arn:aws:cloudformation:eu-north-1:487812001739:stack/amplify-fyp-staging-164206/255dbe40-cbf5-11ed-8eec-06a8a5af1e94",
+      "AmplifyAppId": "d3941wrmeyodle"
+    },
+    "categories": {
+      "auth": {
+        "Whatsapp": {},
+        "FYP": {}
+      },
+      "api": {
+        "Whatsapp": {}
+      },
+      "storage": {
+        "s3whatsappstoragecf31e950": {}
+      }
+    }
+  },
+  "dev": {
+    "categories": {
+      "auth": {
+        "Whatsapp": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "FYP",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-fyp-staging-164206-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/8e9f5760fb2ca9eed3c817d5f842183e9543da07"
+}
